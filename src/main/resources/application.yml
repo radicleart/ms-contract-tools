@@ -1,0 +1,34 @@
+radicle:
+  security:
+    enable-csrf: false
+  mongo:
+    user: clarity
+    mongoIp: mongodb://mongodb
+    mongoPort: 27017
+    mongoDbName: contracts
+application:
+
+---
+
+spring:
+   profiles: test
+application:
+
+---
+
+spring:
+    profiles: docker-dev
+application:
+
+---
+
+spring:
+    profiles: staging
+application:
+
+---
+
+spring:
+    profiles: production
+application:
+   
